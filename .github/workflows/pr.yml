@@ -5,8 +5,13 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   build-and-test:
+    name: Test, Lint, Build, and Report Coverage
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -28,3 +33,7 @@ jobs:
 
       - name: Compile Typescript and Build
         run: yarn build
+
+      - name: Report Coverage
+        if: always()
+        uses: davelosert/vitest-coverage-report-action@v1
