@@ -1,3 +1,12 @@
+## [0.2.2](https://github.com/chalharb/loganharber/compare/v0.2.1...v0.2.2) (2023-04-22)
+
+
+### Bug Fixes
+
+* **devops:** Changed path echo ([fae936e](https://github.com/chalharb/loganharber/commit/fae936efe6aff6bf934ccc16f259b6ad2b3455f7))
+
+
+
 ## [0.2.1](https://github.com/chalharb/loganharber/compare/v0.2.0...v0.2.1) (2023-04-22)
 
 
