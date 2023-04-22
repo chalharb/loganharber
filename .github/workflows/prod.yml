@@ -36,10 +36,18 @@ jobs:
         uses: davelosert/vitest-coverage-report-action@v1
 
       - name: Generating coverage badges
+        if: always()
         uses: jpb06/jest-badges-action@latest
         with:
           branches: main
           no-commit: true
+          output-folder: ./coverage/badges
+
+      - name: Archive code coverage results directory
+        uses: actions/upload-artifact@v3
+        with:
+          name: code-coverage-report
+          path: ./coverage
 
   build-and-deploy:
     name: Build and Deploy
@@ -72,6 +80,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
+      - name: Download a single artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: code-coverage-report
 
       - name: Conventional Changelog Action
         id: changelog
