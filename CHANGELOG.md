@@ -1,3 +1,12 @@
+## [0.1.6](https://github.com/chalharb/loganharber/compare/v0.1.5...v0.1.6) (2023-04-22)
+
+
+### Bug Fixes
+
+* **devops:** Changed prod.yml release notes stage ([#9](https://github.com/chalharb/loganharber/issues/9)) ([abca037](https://github.com/chalharb/loganharber/commit/abca0376be2876364a6a3288f1c2199b59e37c37))
+
+
+
 ## [0.1.5](https://github.com/chalharb/loganharber/compare/v0.1.4...v0.1.5) (2023-04-22)
 
 
