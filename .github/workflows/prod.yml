@@ -71,12 +71,6 @@ jobs:
           release-count: 0
           github-token: ${{ secrets.GH_TOKEN }}
 
-      - name: github.ref output
-        run: echo ${{ github.ref }}
-
-      - name: conventional changelout tag output
-        run: echo ${{ steps.changelog.outputs.tag }}
-
       - name: Create Release
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
         uses: ncipollo/release-action@v1
@@ -84,4 +78,4 @@ jobs:
           artifacts: "dist"
           tag: ${{ steps.changelog.outputs.tag }}
           makeLatest: true
-          bodyFile: ${{ steps.changelog.outputs.clean_changelog }}
+          body: ${{ steps.changelog.outputs.clean_changelog }}
