@@ -1,4 +1,13 @@
-# 0.2.0 (2023-04-22)
+## [0.2.1](https://github.com/chalharb/loganharber/compare/v0.2.0...v0.2.1) (2023-04-22)
+
+
+### Bug Fixes
+
+* **devops:** Testing coverage directory download ([6fe354d](https://github.com/chalharb/loganharber/commit/6fe354d930f032a9c5474391f5aa1d41996f7cd6))
+
+
+
+# [0.2.0](https://github.com/chalharb/loganharber/compare/39f1f014f10b412af706404295c914b2b6eca1be...v0.2.0) (2023-04-22)
 
 
 ### Bug Fixes
