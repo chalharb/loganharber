@@ -68,7 +68,12 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3
         with:
           github-token: ${{ secrets.GH_TOKEN }}
-          output-file: "false"
+
+      - name: github.ref output
+        run: echo ${{ github.ref }}
+
+      - name: conventional changelout tag output
+        run: echo ${{ steps.changelog.outputs.tag }}
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
