@@ -67,6 +67,8 @@ jobs:
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
         with:
+          git-message: "chore(release): {version}"
+          release-count: 0
           github-token: ${{ secrets.GH_TOKEN }}
 
       - name: github.ref output
@@ -74,10 +76,3 @@ jobs:
 
       - name: conventional changelout tag output
         run: echo ${{ steps.changelog.outputs.tag }}
-
-      - name: Create Release
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: ${{ steps.changelog.outputs.tag }}
-          body: ${{ steps.changelog.outputs.clean_changelog }}
-          token: ${{ secrets.GH_TOKEN }}
