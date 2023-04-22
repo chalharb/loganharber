@@ -1,3 +1,12 @@
+## [0.1.7](https://github.com/chalharb/loganharber/compare/v0.1.6...v0.1.7) (2023-04-22)
+
+
+### Bug Fixes
+
+* **devops:** Resolved issue with prod.yml workflow ([#10](https://github.com/chalharb/loganharber/issues/10)) ([5239d22](https://github.com/chalharb/loganharber/commit/5239d2221324b18ae744ed76e2b494d2d7110bc5))
+
+
+
 ## [0.1.6](https://github.com/chalharb/loganharber/compare/v0.1.5...v0.1.6) (2023-04-22)
 
 
