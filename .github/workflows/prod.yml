@@ -82,9 +82,16 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Download a single artifact
+        id: download
         uses: actions/download-artifact@v3
         with:
           name: code-coverage-report
+
+      - name: "Echo download path"
+        run: echo ${{steps.download.outputs.download-path}}
+
+      - name: Stage coverage report directory
+        run: git add ${{steps.download.outputs.download-path}}
 
       - name: Conventional Changelog Action
         id: changelog
