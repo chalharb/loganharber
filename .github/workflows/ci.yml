@@ -115,6 +115,7 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3
         with:
           git-message: "chore(release): {version}"
+          git-branch: feat/devops-refactor
           release-count: 0
           github-token: ${{ secrets.GH_TOKEN }}
 
