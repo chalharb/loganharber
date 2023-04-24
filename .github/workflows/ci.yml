@@ -127,3 +127,21 @@ jobs:
           tag: ${{ steps.changelog.outputs.tag }}
           makeLatest: true
           body: ${{ steps.changelog.outputs.clean_changelog }}
+
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    needs: create-release-notes
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Download App Dist
+        uses: actions/download-artifact@v3
+        with:
+          name: app-dist
+          path: dist
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
