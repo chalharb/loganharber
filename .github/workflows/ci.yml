@@ -117,7 +117,6 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3
         with:
           git-message: "chore(release): {version}"
-          git-branch: feat/devops-refactor
           release-count: 0
           github-token: ${{ secrets.GH_TOKEN }}
 
@@ -125,7 +124,7 @@ jobs:
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "dist, coverage, badges"
+          artifacts: "dist, coverage"
           tag: ${{ steps.changelog.outputs.tag }}
           makeLatest: true
           body: ${{ steps.changelog.outputs.clean_changelog }}
