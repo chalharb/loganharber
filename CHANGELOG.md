@@ -1,3 +1,12 @@
+## [0.2.2](https://github.com/chalharb/loganharber/compare/v0.2.1...v0.2.2) (2023-04-26)
+
+
+### Bug Fixes
+
+* **devops:** Updated deployment stage for ci workflow ([#16](https://github.com/chalharb/loganharber/issues/16)) ([660f442](https://github.com/chalharb/loganharber/commit/660f4425c5e7d47303e3dc9e82af8cc8cf193314))
+
+
+
 ## [0.2.1](https://github.com/chalharb/loganharber/compare/v0.2.0...v0.2.1) (2023-04-26)
 
 
