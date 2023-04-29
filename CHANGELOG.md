@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/chalharb/loganharber/compare/v0.2.2...v0.3.0) (2023-04-29)
+
+
+### Features
+
+* Added ability to leverage styled-components ([#18](https://github.com/chalharb/loganharber/issues/18)) ([2b99c0b](https://github.com/chalharb/loganharber/commit/2b99c0bbf37d491cdee5e9d1ea5f5a7452625353))
+
+
+
 ## [0.2.2](https://github.com/chalharb/loganharber/compare/v0.2.1...v0.2.2) (2023-04-26)
 
 
