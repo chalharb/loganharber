@@ -1,3 +1,12 @@
+## [0.3.1](https://github.com/chalharb/loganharber/compare/v0.3.0...v0.3.1) (2023-04-29)
+
+
+### Bug Fixes
+
+* **devops:** Removed coverage.zip and updated gitignore ([#19](https://github.com/chalharb/loganharber/issues/19)) ([6009559](https://github.com/chalharb/loganharber/commit/600955942f3ba21f737761d79d29637ffbf2af37))
+
+
+
 # [0.3.0](https://github.com/chalharb/loganharber/compare/v0.2.2...v0.3.0) (2023-04-29)
 
 
