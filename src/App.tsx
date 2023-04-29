@@ -1,8 +1,16 @@
+import styled from 'styled-components';
+
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: blue;
+`;
+
 function App() {
 
   return (
     <>
-      <h1>Hello World</h1>
+      <Title>Hello World</Title>
     </>
   )
 }
