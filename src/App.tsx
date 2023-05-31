@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import Button from "./components/Button";
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -7,12 +8,12 @@ const Title = styled.h1`
 `;
 
 function App() {
-
   return (
     <>
       <Title>Hello World</Title>
+      <Button>Click Me!</Button>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
