@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/chalharb/loganharber/compare/v0.3.1...v0.4.0) (2023-05-31)
+
+
+### Features
+
+* Created Button component and tests ([#21](https://github.com/chalharb/loganharber/issues/21)) ([7c43214](https://github.com/chalharb/loganharber/commit/7c43214fc8e0c11d3ab4412ad22785e4bcf0958b))
+
+
+
 ## [0.3.1](https://github.com/chalharb/loganharber/compare/v0.3.0...v0.3.1) (2023-04-29)
 
 
